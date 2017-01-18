@@ -419,6 +419,7 @@
 				E887E2B01E2EA74000A9D8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E887E2B11E2EA74000A9D8F2 /* Build configuration list for PBXNativeTarget "apiTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				E887E2B31E2EA74000A9D8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

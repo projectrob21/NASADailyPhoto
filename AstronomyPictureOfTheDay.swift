@@ -10,15 +10,13 @@ import Foundation
 import UIKit
 
 struct APOD {
-    let copyright: String
     let date: String
     let explanation: String
     var hdurl: UIImage?
     let title: String
  
     init(data: [String:Any]) {
-        guard let safecopyright = data["copyright"] as? String,
-            let safeDate = data["date"] as? String,
+        guard let safeDate = data["date"] as? String,
             let safeexplanation = data["explanation"] as? String,
             let safehdurlstring = data["hdurl"] as? String,
             let safetitle = data["title"] as? String
@@ -27,7 +25,6 @@ struct APOD {
         
         let safeHDUrlStringHttps = safehdurlstring.replacingOccurrences(of: "http", with: "https")
         let safehdurl = URL(string: safeHDUrlStringHttps)
-        self.copyright = safecopyright
         self.date = safeDate
         self.explanation = safeexplanation
         self.title = safetitle
